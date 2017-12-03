@@ -15,7 +15,7 @@ var logic = function(){
 	alert("You win!")
 	$("#resetButton").show()
 	$(".crystal-images").hide()
-	$("#results").append("<p>Wins: " + wins + "</p>");
+	$("#win").html("<p>Wins: " + wins + "</p>");
 	
 }	// IF THE NUMBER IS MORE TO THE NUMBER GENERATED. ALERT THE USER
 	// SHOW THE RESET BUTTON, HIDE THE CRYSTAL BUTTONS, INCREASES THE COUNTER.
@@ -26,7 +26,7 @@ var logic = function(){
 		alert("You lose!")
 		$("#resetButton").show()
 		$(".crystal-images").hide()
-		$("#results").append("<p>Losses: " + losses + "</p>");
+		$("#lose").html("<p>Losses: " + losses + "</p>");
 	
 	}	
 	
@@ -46,7 +46,7 @@ purCrys =  Math.floor(Math.random() * 12) + 1;
 
 console.log(numbersum);
 
-	matchNum = Math.floor(Math.random() * 120 + 19) ;
+	matchNum = Math.floor(Math.random() * 120) ;
 	$("#numToMatch").html(matchNum);
 
 	$('#red').on('click', function(){
@@ -85,7 +85,7 @@ console.log(numbersum);
 // 6. RETURNS THE SUM OF THE CRYSTAL NUMBERS (numberSum) BACK TO 0.
 
 $("#resetButton").on('click', function(){
-	matchNum = Math.floor(Math.random() * 120 + 19) ;
+	matchNum = Math.floor(Math.random() * 120) ;
 	$("#numToMatch").html(matchNum);
 	$("#resetButton").hide();
 	$("#score-count").html(" ");
