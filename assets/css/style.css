@@ -1,34 +1,43 @@
 .title {
 	background-color: steelblue;
 	border-radius: 5px;
-
 }
 
 h1{
 	text-align: center;
 }
 
-
-
 .instructions{
+	border-radius: 10px;
 	background-color: #dddddd;
 	padding: 5px;
 	width: 100%;
 }
 
 #numToMatch{
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30px;
 	background-color: #5DADE2;
 	width: 100px;
-	height: 100px;
-	margin-top: 4px;
+	height: 50px;
+	margin-top: 6%;
 }
 
 #results{
+	border-radius: 10px;
 	background-color: #A3E4D7;
-	margin-left: 4px;
+	margin-left: 5px;
 	margin-top: 4px;
 	width: 100px;
 	height: 100px;
+}
+
+#resetButton{
+	
+	margin: 20px;
+
+
 }  
 
 .score-title{
@@ -37,12 +46,11 @@ h1{
 	border-radius: 5px;
 	width: 200px;
 	text-align: center;
-
 }
-
 #score-count{
+	border-radius: 10px;
 	text-align: center;
-	font-size: 20px;
+	font-size: 30px;
 	font-style: bold;
 	background-color: #A3E4D7;
 	margin-left: 4px;
@@ -51,7 +59,6 @@ h1{
 	height: 100px;
 	padding: 25px;
 }
-
 .crystal-images{
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -59,4 +66,8 @@ h1{
 
 img{
 	width: 100px;
+}
+
+img:hover {
+    opacity: 0.5;
 }
