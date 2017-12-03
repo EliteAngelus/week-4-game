@@ -29,6 +29,17 @@ var logic = function(){
 		$("#lose").html("<p>Losses: " + losses + "</p>");
 	
 	}	
+
+	else if ( losses > 4){
+		alert("You Lose! GAME OVER")
+
+		location.reload();
+	}
+
+	else if(win > 4){
+		alert("You Win! GAME OVER")
+		location.reload();
+	}
 	
 }
 
@@ -37,6 +48,7 @@ var logic = function(){
 
 function game(){
 
+$("#gameOver").hide();
 $("#resetButton").hide();
 
 redCrys = Math.floor(Math.random() * 12) + 1;
@@ -46,7 +58,7 @@ purCrys =  Math.floor(Math.random() * 12) + 1;
 
 console.log(numbersum);
 
-	matchNum = Math.floor(Math.random() * 120) ;
+	matchNum = Math.floor(Math.random() * 120 +19) ;
 	$("#numToMatch").html(matchNum);
 
 	$('#red').on('click', function(){
@@ -85,7 +97,7 @@ console.log(numbersum);
 // 6. RETURNS THE SUM OF THE CRYSTAL NUMBERS (numberSum) BACK TO 0.
 
 $("#resetButton").on('click', function(){
-	matchNum = Math.floor(Math.random() * 120) ;
+	matchNum = Math.floor(Math.random() * 120 + 19) ;
 	$("#numToMatch").html(matchNum);
 	$("#resetButton").hide();
 	$("#score-count").html(" ");
@@ -97,5 +109,6 @@ $("#resetButton").on('click', function(){
 	console.log("works");
 	numbersum = 0;
 })	
+
 
 game();

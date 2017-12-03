@@ -40,6 +40,11 @@ h1{
 
 }  
 
+#gameOver{
+
+	margin: 20px;
+}
+
 .score-title{
 	background-color: steelblue;
 	margin-top: 4px;
