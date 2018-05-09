@@ -30,7 +30,6 @@ var logic = function() {
 
     } else if (losses > 4) {
         alert("You Lose! GAME OVER")
-        document.getElementById('zelda').pause();
         document.getElementById('gameOver').play();
         location.reload();
     } else if (win > 4) {
