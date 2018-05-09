@@ -6,6 +6,12 @@
     background-size: cover;
 } */
 
+.howTo {
+    color: white;
+}
+
+.game {}
+
 video,
 #bgvid {
     position: fixed;
@@ -26,39 +32,73 @@ video,
 }
 
 .title {
-    background-color: steelblue;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 h1 {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
+#win,
+#lose {
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+}
+
 .instructions {
+    font-family: 'Titan One', cursive;
     border-radius: 10px;
-    background-color: #dddddd;
+    /* background-color: #dddddd; */
     padding: 5px;
     width: 100%;
     text-align: center;
 }
 
 #numToMatch {
-    border-radius: 10px;
+    border-radius: 80px;
+    /* background-color: white; */
     text-align: center;
-    font-size: 30px;
-    background-color: #5DADE2;
+    margin-top: 50px;
     width: 100px;
-    height: 50px;
-    margin-top: 6%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#results {
-    border-radius: 10px;
-    background-color: #A3E4D7;
-    margin-left: 5px;
+.resultsDigits,
+.countDigits {
+    font-size: 80px;
+    font-family: 'Carter One', cursive;
+}
+
+#score-count {
+    border-radius: 80px;
+    font-size: 30px;
+    font-style: bold;
+    margin-left: 4px;
     margin-top: 4px;
     width: 100px;
     height: 100px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#results {
+    border-radius: 80px;
+    /* background-color: white; */
+    text-align: center;
+    margin-top: 4px;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #resetButton {
@@ -77,22 +117,16 @@ h1 {
     text-align: center;
 }
 
-#score-count {
-    border-radius: 10px;
-    text-align: center;
-    font-size: 30px;
-    font-style: bold;
-    background-color: #A3E4D7;
-    margin-left: 4px;
-    margin-top: 4px;
-    width: 100px;
-    height: 100px;
-    padding: 25px;
-}
-
 .crystal-images {
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
+}
+
+.resetButton {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 img {
