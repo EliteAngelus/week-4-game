@@ -1,76 +1,104 @@
+/* body {
+    background: url(../images/1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+video,
+#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.70;
+}
+
 .title {
-	background-color: steelblue;
-	border-radius: 5px;
+    background-color: steelblue;
+    border-radius: 5px;
 }
 
-h1{
-	text-align: center;
+h1 {
+    text-align: center;
 }
 
-.instructions{
-	border-radius: 10px;
-	background-color: #dddddd;
-	padding: 5px;
-	width: 100%;
+.instructions {
+    border-radius: 10px;
+    background-color: #dddddd;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
 }
 
-#numToMatch{
-	border-radius: 10px;
-	text-align: center;
-	font-size: 30px;
-	background-color: #5DADE2;
-	width: 100px;
-	height: 50px;
-	margin-top: 6%;
+#numToMatch {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #5DADE2;
+    width: 100px;
+    height: 50px;
+    margin-top: 6%;
 }
 
-#results{
-	border-radius: 10px;
-	background-color: #A3E4D7;
-	margin-left: 5px;
-	margin-top: 4px;
-	width: 100px;
-	height: 100px;
+#results {
+    border-radius: 10px;
+    background-color: #A3E4D7;
+    margin-left: 5px;
+    margin-top: 4px;
+    width: 100px;
+    height: 100px;
 }
 
-#resetButton{
-	
-	margin: 20px;
-
-
-}  
-
-#gameOver{
-
-	margin: 20px;
+#resetButton {
+    margin: 20px;
 }
 
-.score-title{
-	background-color: steelblue;
-	margin-top: 4px;
-	border-radius: 5px;
-	width: 200px;
-	text-align: center;
-}
-#score-count{
-	border-radius: 10px;
-	text-align: center;
-	font-size: 30px;
-	font-style: bold;
-	background-color: #A3E4D7;
-	margin-left: 4px;
-	margin-top: 4px;
-	width: 100px;
-	height: 100px;
-	padding: 25px;
-}
-.crystal-images{
-	margin-bottom: 20px;
-	margin-top: 20px;
+#gameOver {
+    margin: 20px;
 }
 
-img{
-	width: 100px;
+.score-title {
+    background-color: steelblue;
+    margin-top: 4px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+#score-count {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-style: bold;
+    background-color: #A3E4D7;
+    margin-left: 4px;
+    margin-top: 4px;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+}
+
+.crystal-images {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+img {
+    width: 150px;
+    opacity: 0.8;
+    border-radius: 80px;
 }
 
 img:hover {

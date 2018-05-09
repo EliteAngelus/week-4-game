@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Crystal Game</title>
+    <title>Crystal Game</title>
 </head>
 
 <!-- LINK TO THE STYLE SHEET -->
 <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 <!-- JQUERY LINK -->
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 <!-- BOOTSTRAP LINK -->
 
@@ -19,55 +17,61 @@
 
 
 
-<body style="background-image: url(./assets/images/1.jpg); background-repeat: no-repeat; background-position: center; background-size: 120%; height: 120%">
-<!-- DIV CONTAINING THE PAGE -->
-<div class="container">
-	<!-- TITLE SCREEN -->
-	<div class="title col-lg-5"><h1>Crystal Game!</h1>
-	</div>
-	<div class="col-lg-5 col-md-5 col-sm-5">
-		<!-- INSTRUCTIONS TO THE USER CONTAINED IN A DIV -->
-		<div class="instructions">
-			<h3>Here's how you play the game</h3>
-		</br>
-		<ol>
-			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
-			<li>There are four crystals below.</li>
-			<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
-			<li>You win the game by matching your total score to the random number.</li>
-			<li>You lose the game if your total score goes above the random number.</li>
-			<li>The value of each crystal is hidden from you until you click on it.</li>
-			<li>Each time when the game starts, the game will change the values of each crystal.</li>
-		</ol>
-		</div>
-		<!-- PLACE THE ITEM IN A ROW, THE BUTTON TO MATCH, THE RESULTS, AND THE RESET BUTTON -->
-			<div class="row">
-				<div id="numToMatch"></div>
-				<div id="results">
-					<div id="win"></div>
-					<div id="lose"></div>
-				</div>
-							
-			</div>
-			<!-- END OF THAT ROW  -->
+<body>
+    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="./assets/images/milkyWay.mp4" type="video/mp4">
+</video>
+    <!-- DIV CONTAINING THE PAGE -->
+    <div class="container">
+        <!-- TITLE SCREEN -->
+        <div class="title col-lg-">
+            <h1>The Crystal Game</h1>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <!-- INSTRUCTIONS TO THE USER CONTAINED IN A DIV -->
+            <div class="instructions">
+                <h3>Here's how you play the game</h3>
+                </br>
+                <ul>
+                    <li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+                    <li>There are four crystals below.</li>
+                    <li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+                    <li>You win the game by matching your total score to the random number.</li>
+                    <li>You lose the game if your total score goes above the random number.</li>
+                    <li>The value of each crystal is hidden from you until you click on it.</li>
+                    <li>Each time when the game starts, the game will change the values of each crystal.</li>
+                </ul>
+            </div>
+            <!-- PLACE THE ITEM IN A ROW, THE BUTTON TO MATCH, THE RESULTS, AND THE RESET BUTTON -->
+            <div class="row">
+                <div id="numToMatch"></div>
+                <div id="results">
+                    <div id="win"></div>
+                    <div id="lose"></div>
+                </div>
 
-			<!-- CRYSTAL IMAGES -->
-			<div class="crystal-images">
-					<img class="pulse" id="red" src="./assets/images/crystal1.jpg">
-					<img class="pulse" id="yellow" src="./assets/images/crystal2.jpg">
-					<img class="pulse" id="pink" src="./assets/images/crystal3.png">
-					<img class="pulse" id="purple" src="./assets/images/crystal4.png">
-			</div>
+            </div>
+            <!-- END OF THAT ROW  -->
 
-			<div id="resetButton"><button type="button" class="btn btn-danger btn-lg">New Set!</button> </div>
-			<!-- DIV HOLDING THE TALLIED SCORE FROM THE CRYSTAL -->
-			<div id="score-count"><h2></h2>
-		</div>
-		
-	</div>
-</div>
+            <!-- CRYSTAL IMAGES -->
+            <div class="crystal-images">
+                <img class="pulse" id="red" src="./assets/images/Crystals1.gif">
+                <img class="pulse" id="yellow" src="./assets/images/Crystals2.gif">
+                <img class="pulse" style="width: 150px; height: 150px;" id="pink" src="./assets/images/Crystals3.gif">
+                <img class="pulse" id="purple" src="./assets/images/Crystals4.gif">
+            </div>
 
-<script type="text/javascript" src="./assets/javascript/game.js"></script>
+            <div id="resetButton"><button type="button" class="btn btn-danger btn-lg">New Set!</button> </div>
+            <!-- DIV HOLDING THE TALLIED SCORE FROM THE CRYSTAL -->
+            <div id="score-count">
+                <h2></h2>
+            </div>
+
+        </div>
+    </div>
+    <!-- javascript link -->
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
 </body>
+
 </html>
